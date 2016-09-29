@@ -13,6 +13,7 @@ function getHomePage(req, res, next) {
         title: 'Office Anywhere',
         brand: 'Office Anywhere',
         verified: req.isAuthenticated(),
+        user: req.user
     })
 }
 router.get('/login', function(req, res, next) {
